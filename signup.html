@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style_signup.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"/>
+    <meta charset="UTF-8" />
+    <title>Sign up form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,300"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+  </head>
+  <body>
+
+    <div class="bg-img">
+      <div class="content">
+        <div class="signup__container">
+          <div class="container__child signup__thumbnail">
+            <div class="thumbnail__logo">
+              <img src="images/bently.png" style="width: 120px; height: 40px" />
+            </div>
+            <div class="thumbnail__content text-center">
+              <h1 class="heading--primary">Welcome to Bently University.</h1>
+              <h2 class="heading--secondary">Are you ready to join the elite?</h2>
+            </div>
+            <div class="thumbnail__links">
+              <ul class="list-inline m-b-0 text-center">
+                <li><a href=""><i class="fa fa-globe"></i></a></li>
+                <li><a href=""><fa class="fa fa-behance"></fa></a></li>
+                <li><a href=""><i class="fa fa-github"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+              </ul>
+            </div>
+            <div class="signup__overlay"></div>
+          </div>
+          <div class="container__child signup__form">
+
+            <form action="addstudent.php" id="myForm" method="POST" >
+              <div class="form-group" style="margin-bottom: 9px;">
+                <label for="username" style="margin-bottom: 5px;">Username</label>
+                <input class="form-control" type="text" name="username" id="username" placeholder="david.byer" />
+                <span id="user"></span>
+              </div>
+              <div class="form-group" style="margin-bottom: 9px;">
+                <label for="email" style="margin-bottom: 5px;">Email</label>
+                <input class="form-control"type="email" name="email" id="email" placeholder="david.byer@bentlyuniversity.com" />
+                <span id="eml"></span>
+              </div>
+              <div class="form-group" style="margin-bottom: 9px;">
+                <label for="mobile" style="margin-bottom: 5px;">Mobile No.</label>
+                <input class="form-control" type="text" name="mobile" id="mobile" placeholder="+91 781-891-2000" />
+                <span id="mno"></span>
+              </div>
+              <div class="form-group" style="margin-bottom: 9px;">
+                <label for="password" style="margin-bottom: 5px;">Password</label>
+                <input
+                  class="form-control" type="password" name="password" id="password" placeholder="********"/>
+                <span id="pwd"></span>
+              </div>
+              <div class="form-group" style="margin-bottom: 9px;">
+                <label for="passwordRepeat" style="margin-bottom: 5px;">Confirm Password</label>
+                <input
+                  class="form-control" type="password" name="passwordRepeat" id="passwordRepeat" placeholder="********"/>
+                <span id="cpwd"></span>
+              </div>
+              <div class="m-t-lg">
+                <ul class="list-inline">
+                  <li>
+                    <input class="btn btn--form" type="submit" value="Register" name="signup"/>
+                  </li>
+                  <li>
+                    <a class="signup__link" href="login.html">I already registered !!</a>
+                  </li>
+                </ul>
+              </div>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
