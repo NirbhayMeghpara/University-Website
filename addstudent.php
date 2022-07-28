@@ -65,7 +65,7 @@
           $username = $_POST['username'];
           $email = $_POST['email'];
           $mobile = $_POST['mobile'];
-          $password = $_POST['password'];
+          $password = md5($_POST['password']);
       
           $sql = "INSERT INTO student(username,email,mobile,password) VALUES ('$username','$email','$mobile','$password')";
 
