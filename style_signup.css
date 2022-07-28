@@ -133,7 +133,8 @@ h2 {
 }
 
 .thumbnail__links a {
-  font-size: 1rem;
+  font-size: 1.3rem;
+  margin: 2px;
   color: #fff;
 }
 .thumbnail__links a:focus, .thumbnail__links a:hover {
